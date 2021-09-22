@@ -69,13 +69,13 @@ button {
     width: 150px;
     height: 30px;
     border-radius: 20px;
-    background: rgb(9, 73, 12);
+    background: rgb(26, 62, 226);
     color: white;
     margin-right: 50px;
 }
 
 button:hover {
-    background: rgb(39, 128, 44);
+    background: rgb(69, 120, 230);
     text-decoration: underline;
     transform: scale(1.1);
 }
