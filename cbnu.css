@@ -107,10 +107,4 @@ h4 {
 .campus-map img{
     margin-left: 410px;
     border-radius: 20px;
-    padding: 0;
-}
-.campus-map button {
-    position: absolute;
-    margin-left: -430px;
-    margin-top: 610px;
 }
