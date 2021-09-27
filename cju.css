@@ -15,7 +15,7 @@
 
 body {
     background: rgb(235, 235, 235) ;
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Poor Story', cursive;
 }
 
 .title{
@@ -39,7 +39,7 @@ h1 {
     margin-right: 70px;
     margin-left: 150px;
     box-shadow: 5px 5px 0px gray;
-    margin-top: 50px;
+    margin-top: -10px;
 }
 
 .site-container {
@@ -48,7 +48,7 @@ h1 {
 }
 p {
     margin-top: 80px;
-    font-size: 30px;
+    font-size: 20px;
     
 }
 
@@ -100,3 +100,11 @@ p {
     margin-top: 70px;
 }
 
+.campus-map img{
+    margin-left: 410px;
+    border-radius: 20px;
+}
+h4 {
+    font-size: 30px;
+    text-align: center;
+}

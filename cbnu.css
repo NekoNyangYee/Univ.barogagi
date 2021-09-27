@@ -16,7 +16,7 @@
 
 body {
     background: rgb(235, 235, 235) ;
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Poor Story', cursive;
 }
 
 .title{
@@ -53,7 +53,7 @@ h2 {
 }
 p {
     margin-top: 80px;
-    font-size: 30px;
+    font-size: 20px;
     
 }
 

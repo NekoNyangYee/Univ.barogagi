@@ -15,7 +15,7 @@
 
 body {
     background: rgb(235, 235, 235) ;
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Poor Story', cursive;
 }
 
 .title{
@@ -41,13 +41,13 @@ h2 {
 .container {
     background: white;
     border: 1px solid black;
-    width: 1200px;
+    width: 700px;
     height: 150px;
     border-radius: 25px;
     right: 200px;
     display: inline-block;
     margin-right: 70px;
-    margin-left: 150px;
+    margin-left: 400px;
     box-shadow: 5px 5px 0px gray;
     margin-top: 40px;
     transition: all .3s;

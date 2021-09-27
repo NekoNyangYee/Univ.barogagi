@@ -1,6 +1,6 @@
 body {
     background: rgb(235, 235, 235) ;
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Poor Story', cursive;
 }
 
 header {
@@ -14,6 +14,10 @@ header {
     text-align: center;
     z-index: 99;
   }
+
+h1 {
+    margin-top: 10px;
+}
 h3 {
     font-size: 30px;
     padding-top: 100px;
@@ -28,7 +32,7 @@ h4{
 .container {
     border: 1px solid black;
     width: 250px;
-    height: 500px;
+    height: 450px;
     background-color: white;
     border-radius: 25px;
     margin-left: 100px;
@@ -39,11 +43,11 @@ h4{
 }
 .container-2 {
     border: 1px solid black;
-    width: 900px;
-    height: 200px;
+    width: 700px;
+    height: auto;
     background-color: white;
     border-radius: 25px;
-    margin-left: 280px;
+    margin-left: 380px;
     transition: all 0.2s;
     box-shadow: 5px 5px 0px gray;
     display: inline-block;
@@ -61,7 +65,7 @@ img {
 
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .info, h1 {
@@ -69,7 +73,7 @@ p {
 }
 
 .topic {
-    margin-top: 2px;
+    margin-top: -10px;
 }
 
 button {
@@ -108,4 +112,11 @@ button:hover{
 
 li, ul{
     list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
 }
