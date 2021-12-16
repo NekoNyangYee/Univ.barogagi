@@ -92,7 +92,7 @@ h4{
     .container-2 {
     border: 1px solid var(--container-border);
     width: auto;
-    height: auto;
+    height: 170px;
     background-color: var(--bg);
     border-radius: 25px;
     margin: 15px;
@@ -133,6 +133,17 @@ p {
     z-index: 1;
     font-size: 30px;
     margin: 20px;
+    margin-top: 130px;
+}
+
+h2 {
+    text-align: center
+}
+
+.go-info {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .topic {
