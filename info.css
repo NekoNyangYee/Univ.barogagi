@@ -87,7 +87,7 @@ h2:hover {
 
 .topic {
     text-align: center;
-    margin-top: 10000px;
+    margin-top: 100px;
 }
 h9 {
     margin-top: -1000px;
@@ -102,4 +102,18 @@ h9 {
     text-align: left;
     margin-left: 20px;
     font-size: 25px;
+}
+
+.post {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: left;
+}
+.post-02 {
+    text-align: left;
+}
+
+.information-post {
+    margin-top: 130px;
+    text-align: left;
 }

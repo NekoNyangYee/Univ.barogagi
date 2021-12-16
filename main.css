@@ -92,7 +92,7 @@ h4{
     .container-2 {
     border: 1px solid var(--container-border);
     width: auto;
-    height: 170px;
+    height: 150px;
     background-color: var(--bg);
     border-radius: 25px;
     margin: 15px;
@@ -141,11 +141,13 @@ h2 {
 }
 
 .go-info {
-    font-size: 25px;
     text-align: center;
-    margin-top: 20px;
 }
 
+.info-post {
+    font-size: 25px;
+    margin-bottom: -100px;
+}
 .topic {
     margin-top: -10px;
 }
@@ -183,7 +185,6 @@ li, ul{
 a {
     text-decoration: none;
     color: var(--text);
-    
 }
 
 .setting-icon {
