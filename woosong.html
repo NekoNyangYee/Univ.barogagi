@@ -5,23 +5,23 @@
             @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
             </style>
         <link rel="stylesheet" href="woosong.css">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="main.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>대학 바로가기 - 우송대학교</title>
     </head>
-    <body>
-        <section id="header">
-            <div class="wrapper">
-                
-                <div class="title">
-                     <a href="index.html">대학 바로가기</a>
-                </div>
-        </section>
+    <body data-theme="light">
+        <header>
+            <a href="index.html"><h1>대학 바로가기</h1></a>
+            <div class="setting-icon">
+                <input id="btnDisplayMode" class="btn" type="button" value="다크모드" onclick="switchTheme();">
+            </div>
+         </header>
        <h1>우송대학교</h1>
-       <h2>주소 : 대전광역시 동구 백룡로 59</h2>
-       <h4>바로가기</h4>
+       <a href="https://map.kakao.com/?urlX=599899&urlY=788852&urlLevel=3&itemId=26530622&q=%EC%9A%B0%EC%86%A1%EB%8C%80%ED%95%99%EA%B5%90%20%EC%84%9C%EC%BA%A0%ED%8D%BC%EC%8A%A4&srcid=26530622&map_type=TYPE_MAP"><h2>주소 : 대전광역시 동구 백룡로 59</h2></a>
        <div class="container">
            <div class="site-container">
-               <img src="images.jpg" width="90">
+               <img src="images.jpg" id="woosong-images">
                <p>스마트교육지원 바로가기</p>
                <div class="go-site">
                 <button type="button" onclick="location.href='https://smart.wsu.ac.kr/login.php'">바로가기</button> 
@@ -30,7 +30,7 @@
        </div>
        <div class="container">
         <div class="site-container">
-            <img src="images.jpg" width="90">
+            <img src="images.jpg" id="woosong-images">
             <p>대학정보 시스템 바로가기</p>
             <div class="go-site">
                 <button type="button" onclick="location.href= 'https://info.wsu.ac.kr/index_new.jsp';">바로가기</button> 
@@ -39,7 +39,7 @@
     </div>
     <div class="container">
         <div class="site-container">
-            <img src="images.jpg" width="90">
+            <img src="images.jpg" id="woosong-images">
             <p>우송대 홈페이지 바로가기</p>
             <div class="go-site">
                 <button type="button" onclick="location.href= 'https://www.wsu.ac.kr/main/index.jsp';">바로가기</button> 
@@ -48,7 +48,7 @@
     </div>
     <h4>우송대학교 캠퍼스 맵</h4>
     <div class="campus-map">
-        <a href="https://www.wsu.ac.kr/site/main/wsu_map/campusmap.html#self"><img src="unnamed.jpg" width="700"></a>
+        <a href="https://www.wsu.ac.kr/site/main/wsu_map/campusmap.html#self"><img src="unnamed.jpg" id="campus-images"></a>
     </div>
      </body>
 </html>

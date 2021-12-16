@@ -1,27 +1,74 @@
 body {
-    background: rgb(235, 235, 235) ;
     font-family: 'Poor Story', cursive;
+    margin: 0 auto;
+    margin-top: 0;
+    color: var(--text);
+    background-color: var(--bg);
+    height: auto;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(0, 0, 0) var(--html-bg);
+    padding: 0;
+    bottom: 0;
+    margin-top: -30px;
+}
+
+body[data-theme="light"] {
+    --bg: white;
+    --text: black;
+    --header-bg: rgba(255, 255, 255, 0.7);
+    --header-border: rgba(168, 168, 168, 0.5);
+    --container-border: rgb(177, 177, 177);
+    --container-shadow: rgb(212, 212, 212);
+    --html-bg: white;
+}
+
+body[data-theme="dark"] {
+    --bg: black;
+    --text: white;
+    --header-bg: rgba(0, 0, 0, 0.7);
+    --header-border: rgba(111, 111, 111, 0.5);
+    --container-border: rgb(83, 83, 83);
+    --container-shadow: rgb(20, 20, 20);
+    color-scheme: dark;
+    --html-bg: black;
 }
 
 header {
     position: fixed;
     top: 0; 
-    left: 0;
-    height: 100px;
+    left: 0px;
+    height: 62px;
     width: 100%;
-    background-color: rgba(219, 219, 219, 0.925);
-    font-size: 30px;
+    background-color: var(--header-bg);
+    font-size: 25px;
     text-align: center;
     z-index: 99;
-  }
-
-h1 {
-    margin-top: 10px;
+    border-bottom: 1px solid var(--header-border);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h3 {
+
+header h1 {
+    margin: 0;
     font-size: 30px;
-    padding-top: 100px;
+    line-height: 1;
+    z-index: 99;
+}
+
+
+h3 {
+    font-size: 25px;
+    padding-top: 0px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 h4{
@@ -30,29 +77,41 @@ h4{
 }
 
 .container {
-    border: 1px solid black;
+    border: 1px solid var(--container-border);
     width: 250px;
     height: 450px;
-    background-color: white;
+    background-color: var(--bg);
     border-radius: 25px;
     margin-left: 100px;
     transition: all 0.2s;
-    box-shadow: 5px 5px 0px gray;
+    box-shadow: 5px 5px 0px var(--container-shadow);
     display: inline-block;
     margin-top: 50px;
 }
-.container-2 {
-    border: 1px solid black;
-    width: 700px;
+@media (min-width: 100px) {
+    .container-2 {
+    border: 1px solid var(--container-border);
+    width: auto;
     height: auto;
-    background-color: white;
+    background-color: var(--bg);
     border-radius: 25px;
-    margin-left: 380px;
+    margin: 15px;
     transition: all 0.2s;
-    box-shadow: 5px 5px 0px gray;
-    display: inline-block;
+    box-shadow: 5px 5px 0px  var(--container-shadow);
     margin-top: 10px;
+    }
+    button {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgba(123, 123, 123, 0.1);
+    margin-left: 50px;
+    text-align: center;
+    border: 0;
+    color: var(--text);
 }
+}
+
 .container:hover{
     transform: scale(1.1);
     
@@ -60,7 +119,8 @@ h4{
 
 img {
     width: 250px;
-    border-radius: 25px;
+    border-radius: 20px;
+   
 }
 
 p {
@@ -70,41 +130,34 @@ p {
 
 .info, h1 {
     text-align: center;
+    z-index: 1;
+    font-size: 30px;
+    margin: 20px;
 }
 
 .topic {
     margin-top: -10px;
 }
 
-button {
-    border: 1px solid black;
-    width: 150px;
-    height: 30px;
-    border-radius: 20px;
-    background: rgb(70, 70, 70);
-    color: white;
-    margin-left: 50px;
-    text-align: center;
-}
+
 
 .button2 {
     text-align: center;
 }
 
 button:hover{
-    text-decoration: underline;
-    background: rgb(206, 206, 206);
-    color: black;
+    background: rgba(123, 123, 123, 0.15);
 }
 
 .footer-main {
     width: 100%;
+    height: 100px;
     height: auto;
-    background-color: gray;
     margin-top: 80px;
-    color: white;
+    margin-bottom: 10px;
+    color: var(--text);
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
     left: 0;
     top: 0;
     padding: 0;
@@ -112,11 +165,27 @@ button:hover{
 
 li, ul{
     list-style: none;
+    margin: 0;
+    font-size: 20px;
+    margin-right: 10px;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--text);
+    
 }
-a:hover {
-    text-decoration: underline;
+
+.setting-icon {
+   position: absolute;
+   right: 10px;
+   padding: 0;
+}
+.btn {
+    border-radius: 20px;
+    width: 80px;
+    position: relative;
+}
+
+.intro {
+    margin-top: 120px;
 }

@@ -5,23 +5,23 @@
             @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
             </style>
         <link rel="stylesheet" href="cbnu.css">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="main.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>대학 바로가기 - 충북대학교</title>
     </head>
-    <body>
-        <section id="header">
-            <div class="wrapper">
-                
-                <div class="title">
-                     <a href="index.html">대학 바로가기</a>
-                </div>
-        </section>
+    <body data-theme="light">
+        <header>
+            <a href="index.html"><h1>대학 바로가기</h1></a>
+            <div class="setting-icon">
+                <input id="btnDisplayMode" class="btn" type="button" value="다크모드" onclick="switchTheme();">
+            </div>
+         </header>
        <h1>충북대학교</h1>
-       <h2>주소 : 충청북도 청주시 서원구 충대로1</h2>
-       <h4>바로가기</h4>
+       <a href="https://map.kakao.com/?urlX=602076&urlY=869961&urlLevel=3&itemId=11312845&q=%EC%B6%A9%EB%B6%81%EB%8C%80%ED%95%99%EA%B5%90%20%EA%B0%9C%EC%8B%A0%EC%BA%A0%ED%8D%BC%EC%8A%A4&srcid=11312845&map_type=TYPE_MAP"><h2>주소 : 충청북도 청주시 서원구 충대로1</h2></a>
        <div class="container">
            <div class="site-container">
-               <img src="header_logo.svg" width="200">
+               <img src="cbnu.jpg" id="cbnu-images-02">
                <p>씨앗 바로가기</p>
                <div class="go-site">
                 <button type="button" onclick="location.href=' https://cieat.cbnu.ac.kr/clientMain/a/t/main.do'">바로가기</button> 
@@ -30,7 +30,7 @@
        </div>
        <div class="container">
         <div class="site-container">
-            <img src="cbnu.jpg" width="50">
+            <img src="cbnu.jpg" id="cbnu-images-02">
             <p>스마트 교육 플랫폼 바로가기</p>
             <div class="go-site">
                 <button type="button" onclick="location.href= 'https://cbnu.blackboard.com/?new_loc=%2Fultra%2Finstitution-page';">바로가기</button> 
@@ -39,7 +39,7 @@
     </div>
     <div class="container">
         <div class="site-container">
-            <img src="cbnu.jpg" width="50">
+            <img src="cbnu.jpg" id="cbnu-images-02">
             <p>충북대 홈페이지 바로가기</p>
             <div class="go-site">
                 <button type="button" onclick="location.href= 'https://eis.cbnu.ac.kr/cbnuLogin?1614645450';">바로가기</button> 
@@ -48,7 +48,7 @@
     </div>
    <h4>충북대학교 캠퍼스 맵</h4>
    <div class="campus-map">
-       <a href="https://www.chungbuk.ac.kr/resource/site/www/campus_map.jsp"><img src="cbnu_map.jpg" width="700"></a>
+       <a href="https://www.chungbuk.ac.kr/resource/site/www/campus_map.jsp"><img src="cbnu_map.jpg" id="campus-images"></a>
    </div>
    
      </body>

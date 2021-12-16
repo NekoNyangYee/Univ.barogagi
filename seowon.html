@@ -5,22 +5,23 @@
             @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
             </style>
         <link rel="stylesheet" href="seowon.css">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="main.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>대학 바로가기 - 서원대학교</title>
     </head>
-    <body>
-        <section id="header">
-            <div class="wrapper">
-                
-                <div class="title">
-                     <a href="index.html">대학 바로가기</a>
-                </div>
-        </section>
+    <body data-theme="light">
+        <header>
+            <a href="index.html"><h1>대학 바로가기</h1></a>
+            <div class="setting-icon">
+                <input id="btnDisplayMode" class="btn" type="button" value="다크모드" onclick="switchTheme();">
+            </div>
+         </header>
        <h1>서원대학교</h1>
-       <h2>주소 : 충청북도 청주시 서원구 무심서로 377-3</h2> <h4>바로가기</h4>
+       <a href="https://map.kakao.com/?urlX=607691&urlY=868441&urlLevel=3&itemId=11354598&q=%EC%84%9C%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90&srcid=11354598&map_type=TYPE_MAP"><h2>주소 : 충청북도 청주시 서원구 무심서로 377-3</h2></a>
        <div class="container">
            <div class="site-container">
-               <img src="seowon_logo.jpg" width="90">
+               <img src="seowon_logo.jpg" id="seowon-images">
                <p>eCampus 바로가기</p>
                <div class="go-site">
                 <button type="button" onclick="location.href='https://ecampus.seowon.ac.kr/'">바로가기</button> 
@@ -29,7 +30,7 @@
        </div>
        <div class="container">
         <div class="site-container">
-            <img src="seowon_logo.jpg" width="90">
+            <img src="seowon_logo.jpg" id="seowon-images-02">
             <p>학사 행정 서비스 바로가기</p>
             <div class="go-site">
                 <button type="button" onclick="location.href= 'https://seowon.seowon.ac.kr:44301/smart/index.jsp';">바로가기</button> 
@@ -38,7 +39,7 @@
     </div>
     <div class="container">
         <div class="site-container">
-            <img src="seowon_logo.jpg" width="90">
+            <img src="seowon_logo.jpg" id="seowon-images-03">
             <p>서원대 홈페이지 바로가기</p>
             <div class="go-site">
                 <button type="button" onclick="location.href= 'https://www.seowon.ac.kr/seowon/index.do';">바로가기</button> 
@@ -47,7 +48,7 @@
     </div>
     <h4>서원대학교 캠퍼스 맵</h4>
     <div class="campus-map">
-        <a href="https://www.seowon.ac.kr/kli/7508/subview.do"><img src="temp_1588235337162100.jpg" width="700"></a>
+        <a href="https://www.seowon.ac.kr/kli/7508/subview.do"><img src="temp_1588235337162100.jpg" id="campus-images"></a>
     </div>
      </body>
 </html>

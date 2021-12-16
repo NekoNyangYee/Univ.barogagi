@@ -6,32 +6,42 @@
         </style>
  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="information.css">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="main.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>대학 바로가기 - 공지사항</title>
     </head>
-    <body>
-        <section id="header">
-            <div class="wrapper">
-                
-                <div class="title">
-                     <a href="index.html">대학 바로가기</a>
-                </div>
-        </section>
+    <body data-theme="light">
+        <header>
+            <a href="index.html"><h1>대학 바로가기</h1></a>
+            <div class="setting-icon">
+                <input id="btnDisplayMode" class="btn" type="button" value="다크모드" onclick="switchTheme();">
+            </div>
+         </header>
         <h1 class="topic">
-       
-            <a href="information.html"> <i class='bx bxs-info-circle'></i>공지사항</a>
+            <div class="go-info">
+                <a href="information.html"> <i class='bx bxs-info-circle'></i>공지사항</a>
+            </div>
            </h1>
-
-           <div class="container">
+           <div class="info-container">
             <div class="site-container">
                 
-                <p> [NEW] 2021-09-28 2.0 정식 릴리즈</p>
+                <p> [NEW] 2021-12-18 3.0 업데이트!</p>
                 <div class="go-site">
                  <button type="button" onclick="location.href='info3.html'">바로가기</button> 
                 </div>
             </div>
         </div>
-       <div class="container">
+           <div class="info-container">
+            <div class="site-container">
+                
+                <p>2021-09-28 2.0 정식 릴리즈</p>
+                <div class="go-site">
+                 <button type="button" onclick="location.href='info3.html'">바로가기</button> 
+                </div>
+            </div>
+        </div>
+       <div class="info-container">
            <div class="site-container">
                
                <p>2021-09-25 Beta 1.5 릴리즈</p>
@@ -40,7 +50,7 @@
                </div>
            </div>
        </div>
-       <div class="container">
+       <div class="info-container">
         <div class="site-container">
            
             <p>2021-09-18 Beta 1.0 릴리즈</p>

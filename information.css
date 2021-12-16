@@ -23,12 +23,6 @@ body {
     margin-left: 30px;
 }
 
-.topic a{
-    font-size: 40px;
-    text-align: left;
-    margin: 10px;
-    color: black;
-}
 h1 {
     margin-left: 10px;
     font-size: 40px;
@@ -38,26 +32,36 @@ h2 {
     text-align: center;
     margin-top: -70px;
 }
-.container {
-    background: white;
-    border: 1px solid black;
-    width: 700px;
+
+
+@media (min-width: 1000px) {
+    .info-container {
+    background: var(--bg);
+    border: 1px solid var(--container-border);
+    width: 500px;
     height: 150px;
     border-radius: 25px;
     right: 200px;
     display: inline-block;
-    margin-right: 70px;
-    margin-left: 400px;
-    box-shadow: 5px 5px 0px gray;
-    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 0px var(--container-shadow);
+    margin-top: 20px;
     transition: all .3s;
 
+    }
+   
+    button {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgba(123, 123, 123, 0.1);
+    margin-left: 50px;
+    text-align: center;
+    border: 0;
+    color: var(--text);
+    }
 }
-
-.container:hover {
-    transform: scale(1.1);
-}
-
 .site-container {
     text-align: center;
     margin-top: 40px;
@@ -87,26 +91,20 @@ button {
 
 button:hover {
     background: rgb(124, 124, 124);
-    text-decoration: underline;
-    transform: scale(1.1);
+
 }
 
 a {
     text-decoration: none;
     color: white;
 }
-
-a:hover {
-    color: black;
-    text-decoration: underline;
-}
-img {
-    padding: 0;
-    margin: 0;
-}
 p {
     margin: 0;
     padding: 0;
     margin-top: 20px;
 }
-
+.go-info {
+    margin-top: 130px;
+    text-align: left;
+    font-size: 25px;
+}
