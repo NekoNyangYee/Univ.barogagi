@@ -74,19 +74,21 @@ h3 {
 h4{
     text-align: center;
     font-size: 30px;
+    margin-bottom: 0;
 }
 
 .container {
     border: 1px solid var(--container-border);
     width: 250px;
-    height: 450px;
+    height: 380px;
     background-color: var(--bg);
     border-radius: 25px;
-    margin-left: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
     transition: all 0.2s;
     box-shadow: 5px 5px 0px var(--container-shadow);
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 @media (min-width: 100px) {
     .container-2 {
@@ -118,9 +120,11 @@ h4{
 }
 
 img {
-    width: 250px;
+    width: 220px;
     border-radius: 20px;
-   
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-top: 15px;
 }
 
 p {
