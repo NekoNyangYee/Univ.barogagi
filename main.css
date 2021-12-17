@@ -23,6 +23,7 @@ body[data-theme="light"] {
     --container-border: rgb(177, 177, 177);
     --container-shadow: rgb(212, 212, 212);
     --html-bg: white;
+    --button: rgba(56, 56, 56, 0.1);
 }
 
 body[data-theme="dark"] {
@@ -30,10 +31,11 @@ body[data-theme="dark"] {
     --text: white;
     --header-bg: rgba(0, 0, 0, 0.7);
     --header-border: rgba(111, 111, 111, 0.5);
-    --container-border: rgb(83, 83, 83);
+    --container-border: rgb(66, 66, 66);
     --container-shadow: rgb(20, 20, 20);
     color-scheme: dark;
     --html-bg: black;
+    --button: rgba(245, 243, 243, 0.1);
 }
 
 header {
@@ -106,8 +108,7 @@ h4{
     width: 150px;
     height: 30px;
     border-radius: 20px;
-    background: rgba(123, 123, 123, 0.1);
-    margin-left: 50px;
+    background: var(--button);
     text-align: center;
     border: 0;
     color: var(--text);
