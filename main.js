@@ -26,3 +26,4 @@ const switchTheme = () => {
         body.setAttribute('data-theme', 'light');
     }
 }
+

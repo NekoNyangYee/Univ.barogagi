@@ -38,13 +38,13 @@ h2 {
     .info-container {
     background: var(--bg);
     border: 1px solid var(--container-border);
-    width: 500px;
+    width: 400px;
     height: 150px;
     border-radius: 25px;
     right: 200px;
     display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
     box-shadow: 5px 5px 0px var(--container-shadow);
     margin-top: 20px;
     transition: all .3s;
