@@ -23,7 +23,6 @@ header {
     font-size: 25px;
     text-align: center;
     z-index: 99;
-    border-bottom: 1px solid var(--header-border);
     backdrop-filter: blur(20px);
     display: flex;
     justify-content: center;
@@ -108,9 +107,11 @@ h9 {
     margin-top: 10px;
     font-size: 25px;
     text-align: left;
+    margin-left: 20px
 }
 .post-02 {
     text-align: left;
+    margin-bottom: 0;
 }
 
 .information-post {
