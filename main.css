@@ -24,6 +24,7 @@ body[data-theme="light"] {
     --container-shadow: rgb(212, 212, 212);
     --html-bg: white;
     --button: rgba(56, 56, 56, 0.1);
+    --buttona: 56, 56, 56;
 }
 
 body[data-theme="dark"] {
@@ -35,7 +36,8 @@ body[data-theme="dark"] {
     --container-shadow: rgb(20, 20, 20);
     color-scheme: dark;
     --html-bg: black;
-    --button: rgba(245, 243, 243, 0.1);
+    --button: rgba(245, 245, 245, 0.1);
+    --buttona: 245, 245, 245;
 }
 
 header {
@@ -52,8 +54,23 @@ header {
     align-items: center;
 }
 
+button, input[type="button"] {
+    height: 34px;
+    border-radius: 8px;
+    padding: 0 14px;
+    border: 0;
+    background-color: rgba(var(--buttona), 0.1);
+    transition: opacity 0.2s, background-color 0.15s;
+}
 
+button:hover, input[type="button"]:hover {
+    background-color: rgba(var(--buttona), 0.2);
+}
 
+button:active, input[type="button"]:active {
+    opacity: 0.5;
+    transition: opacity 0s, background-color 0s !important;
+}
 
 h3 {
     font-size: 25px;
@@ -77,8 +94,8 @@ h4{
     height: 380px;
     background-color: var(--bg);
     border-radius: 25px;
-    margin-left: 70px;
-    margin-right: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
     transition: all 0.2s;
     box-shadow: 5px 5px 0px var(--container-shadow);
     display: inline-block;
@@ -88,23 +105,16 @@ h4{
     .container-2 {
     border: 1px solid var(--container-border);
     width: auto;
-    height: 150px;
+    height: auto;
     background-color: var(--bg);
     border-radius: 25px;
     margin: 15px;
     transition: all 0.2s;
     box-shadow: 5px 5px 0px  var(--container-shadow);
     margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
-    button {
-    width: 150px;
-    height: 30px;
-    border-radius: 20px;
-    background: var(--button);
-    text-align: center;
-    border: 0;
-    color: var(--text);
-}
 }
 
 .container:hover{
@@ -157,10 +167,6 @@ h2 {
     text-align: center;
 }
 
-button:hover{
-    background: rgba(123, 123, 123, 0.15);
-}
-
 .footer-main {
     width: 100%;
     height: 100px;
@@ -186,33 +192,32 @@ a {
     text-decoration: none;
     color: var(--text);
 }
-.btn {
-    border-radius: 20px;
-    width: 80px;
-    position: relative;
-    margin-right: -70px;
-}
 
 .intro {
-    margin-top: 120px;
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.title h1{
-    padding-top: -100px;
-    margin-top: 0;
-}
 
 .main-title {
     position: sticky;
-    top: -80px;
     padding-top: 90px;
-    margin-bottom: 150px;
-    margin-top: 100px;
+    top: -90px;
+    margin-bottom: 80px;
 }
 .main-loby {
-    margin-top: 0;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
+
+.etc-font {
+    margin: 40px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.link {
+    margin: 15px;
+
+}
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>

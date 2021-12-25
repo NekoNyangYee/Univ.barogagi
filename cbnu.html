@@ -6,15 +6,16 @@
             </style>
         <link rel="stylesheet" href="cbnu.css">
         <link rel="stylesheet" href="main.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
         <script type="text/javascript" src="main.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>대학 바로가기 - 충북대학교</title>
     </head>
-    <body data-theme="light">
+    <body data-theme="light" onload="loadTheme();">
         <header class="title">
-            <a href="Univ_Barogagi.html" class="title"><h1 class="main-loby">대학 바로가기</h1></a>
+            <a href="Univ_Barogagi.html"><h1 class="main-loby">대학 바로가기</h1></a>
             <div class="setting-icon">
-                <input id="btnDisplayMode" class="btn" type="button" value="다크모드" onclick="switchTheme();">
+                <input id="btnDisplayMode" type="button" value="다크모드" onclick="switchTheme();">
             </div>
          </header>
        <h1 class="school-name">충북대학교</h1>
@@ -43,6 +44,14 @@
    <div class="campus-map">
        <a href="https://www.chungbuk.ac.kr/resource/site/www/campus_map.jsp"><img src="cbnu_map.jpg" id="campus-images"></a>
    </div>
-   
+   <div>
+    <h4>그 외 바로가기</h4>
+    <p class="etc-font">
+        <a href="https://www.instagram.com/cbnu1951" class="link"><i class='bx bxl-instagram' ></i>인스타그램</a>
+        <a href="https://ko-kr.facebook.com/cbnu1/" class="link"><i class='bx bxl-facebook-square'></i>페이스북</a>
+        <a href="https://twitter.com/cbnu1" class="link"><i class='bx bxl-twitter' ></i>트위터</a><br>
+        <a href="https://www.youtube.com/channel/UCr7fVhSxV-QHzbI5Ee67rJw" class="link"><i class='bx bxl-youtube'></i>유튜브</a>
+    </p>
+</div>
      </body>
 </html>
